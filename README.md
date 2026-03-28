@@ -9,8 +9,8 @@ A full-stack platform where **Users** browse and book expert-led sessions, and *
 ## Quick Start
 
 ```bash
-git clone <repo-url>
-cd full_stack_practice
+git clone https://github.com/PareshVinzava/sessions-marketplace
+cd sessions-marketplace
 cp .env.example .env
 docker compose up --build
 ```
