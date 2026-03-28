@@ -1,0 +1,22 @@
+# Environment — never commit real credentials
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+htmlcov/
+.coverage
+*.egg-info/
+
+# Node
+frontend/node_modules/
+
+# Docker volumes / build artifacts
+frontend/dist/
+
+# Internal project files
+CLAUDE.md
+todo/
+Sessions_Marketplace_Master_Reference.docx

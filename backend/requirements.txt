@@ -1,0 +1,32 @@
+# ── Core ─────────────────────────────────────────────────────────────────────
+Django==5.2
+djangorestframework==3.16.1
+psycopg[binary]==3.3.3
+django-cors-headers==4.7.0
+django-environ==0.13.0
+gunicorn==25.2.0
+whitenoise==6.9.0
+Pillow==11.2.1
+django-filter==25.1
+
+# ── Auth ──────────────────────────────────────────────────────────────────────
+django-allauth==65.15.0
+djangorestframework-simplejwt==5.5.1
+PyJWT==2.10.1
+cryptography==44.0.3  # required by allauth google provider for JWT verification
+
+# ── API Docs ──────────────────────────────────────────────────────────────────
+drf-spectacular==0.29.0
+
+# ── Bonus: Object Storage (MinIO / S3) ───────────────────────────────────────
+django-storages[s3]==1.14.6
+boto3==1.38.0
+
+# ── Bonus: Stripe Payments ────────────────────────────────────────────────────
+stripe==15.0.0
+
+# ── Cache / Rate Limiting (DRF built-in throttling backed by Redis) ───────────
+django-redis==5.4.0
+
+# ── Observability ─────────────────────────────────────────────────────────────
+sentry-sdk[django]==2.22.0

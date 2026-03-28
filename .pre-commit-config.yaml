@@ -1,0 +1,32 @@
+repos:
+  # ── Backend: Python ───────────────────────────────────────────────────────
+  - repo: https://github.com/psf/black
+    rev: 25.1.0
+    hooks:
+      - id: black
+        language_version: python3.13
+        files: ^backend/
+
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.11.0
+    hooks:
+      - id: ruff
+        args: [--fix]
+        files: ^backend/
+
+  # ── Frontend: JavaScript/TypeScript ───────────────────────────────────────
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: v3.5.3
+    hooks:
+      - id: prettier
+        files: ^frontend/src/
+        types_or: [javascript, jsx, ts, tsx, css, json]
+
+  - repo: local
+    hooks:
+      - id: eslint
+        name: eslint
+        entry: bash -c 'cd frontend && npx eslint src/ --max-warnings=0'
+        language: system
+        files: ^frontend/src/.*\.[jt]sx?$
+        pass_filenames: false
