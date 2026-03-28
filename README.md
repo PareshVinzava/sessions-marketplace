@@ -81,7 +81,7 @@ docker compose up -d backend
 
 ---
 
-## Stripe Payments (Bonus)
+## Stripe Payments
 
 ### Step 1 — Set API keys in `.env` before building
 
@@ -154,7 +154,7 @@ Use test card: **4242 4242 4242 4242** · any future date · any CVC
 
 ---
 
-## MinIO Image Uploads (Bonus)
+## MinIO Image Uploads
 
 MinIO runs automatically and the bucket is created on first boot. No manual setup needed.
 
